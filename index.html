@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family: Arial, sans-serif;
+            }
+
+            body{
+                background: #f5f7fb;
+                color:#333;
+            }
+
+            #loginPage{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                height:100vh;
+            }
+
+            .login-box{
+                width:350px;
+                background:white;
+                padding:35px;
+                border-radius:20px;
+                text-align:center;
+                box-shadow:0 10px 30px rgba(0,0,0,.2);
+            }
+
+            .login-box h1{
+                color:#4169E1;
+                margin-bottom:20px;
+            }
+
+            .login-box input{
+                width:100%;
+                padding:12px;
+                margin:10px 0;
+                border:2px solid #4169E1;
+                border-radius:25px;
+                outline:none;
+            }
+
+            .login-box button{
+                width:100%;
+                padding:12px;
+                border:none;
+                border-radius:25px;
+                background:#4169E1;
+                color:white;
+                cursor:pointer;
+                margin-top:10px;
+            }
+        </style>
+
+        <div id="loginPage">
+            <div class="login-box">
+                <h1>WELCOME!</h1>
+                <input type="text" id="username" placeholder="adila">
+                <input type="password" id="password" placeholder="12345">
+                <button onclick="login()">LOGIN</button>
+            </div>
+        </div>
+
+        <script>
+            function login(){
+            let
+            nama=document.getElementById("username").value;
+            let
+            pw=document.getElementById("password").value;
+            if(nama == "adila" && pw == "12345"){
+            alert("Login berhasil !!");
+            window.location.href = "adilabieber.html";
+            }else{
+            alert("Login Gagal !!");
+            }
+            }
+        </script>
+    </body>
+</html>
